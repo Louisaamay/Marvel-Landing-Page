@@ -15,6 +15,8 @@
 
       .background-gif {
         position: absolute;
+        width: 100%;
+        height: auto;
         left: 0;
         right: 0;
         top: 0;
@@ -152,6 +154,7 @@
 
       img {
         display: block;
+        width: 100%;
         height: 100px;
         border-radius: 10px;
       }
@@ -241,12 +244,24 @@
         border-radius: 10px;
       }
 
-      @media screen and (max-width: 600px) {
+      @media (max-width: 600px) {
+        .background-gif {
+          display: flex;
+          justify-content: center;
+          height: 400px;
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+        }
+        body {
+          margin-top: -250px;
+        }
         .timeline::after {
           left: 31px;
         }
 
         .container {
+          margin-top: 0px;
+          padding-top: 0px;
           width: 100%;
           padding-left: 70px;
           padding-right: 25px;
@@ -275,7 +290,7 @@
       <div class="background-gif">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/899/original/Marvel1.jpeg?1652175961"
-          style="width: 100%; height: 700px"
+          style="width: 100%; height: auto"
         />
       </div>
       <a href="#sec-2">
@@ -294,6 +309,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/884/original/Captain_America.jpg?1652175698"
+              style="width: 100%"
             />
             <h2>
               Captain America:
@@ -313,6 +329,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/885/original/Captain_Marvel.jpg?1652175709"
+              style="width: 100%"
             />
             <h2>Captain Marvel <strong>(2019)</strong></h2>
             <p>
@@ -328,6 +345,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/894/original/Iron_Man.jpg?1652175821"
+              style="width: 100%"
             />
             <h2>Iron Man <strong>(2008) </strong></h2>
             <p>
@@ -344,6 +362,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/892/original/Iron_Man_2.jpg?1652175802"
+              style="width: 100%"
             />
             <h2>Iron Man 2 <strong>(2010)</strong></h2>
             <p>
@@ -359,6 +378,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/891/original/Hulk.jpg?1652175791"
+              style="width: 100%"
             />
             <h2>The Incredible Hulk <strong>(2008)</strong></h2>
             <p>
@@ -374,6 +394,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/898/original/Thor.jpg?1652175878"
+              style="width: 100%"
             />
             <h2>Thor <strong>(2011)</strong></h2>
             <p>
@@ -389,6 +410,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/879/original/Avengers.jpg?1652175618"
+              style="width: 100%"
             />
             <h2>The Avengers <strong>(2012) </strong></h2>
             <p>
@@ -404,6 +426,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/896/original/Thor_2.jpg?1652175860"
+              style="width: 100%"
             />
             <h2>Thor: Dark World <strong>(2013)</strong></h2>
             <p>
@@ -419,6 +442,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/893/original/Iron_Man_3.jpg?1652175812"
+              style="width: 100%"
             />
             <h2>Iron Man 3 <strong>(2013)</strong></h2>
             <p>
@@ -434,6 +458,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/883/original/Captain_America_2.jpg?1652175674"
+              style="width: 100%"
             />
             <h2>Captain America: The Winter Soldier <strong>(2014)</strong></h2>
             <p>
@@ -450,6 +475,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/890/original/Guardians.jpg?1652175783"
+              style="width: 100%"
             />
             <h2>Guardians of the Galaxy <strong>(2014)</strong></h2>
             <p>
@@ -464,6 +490,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/889/original/Guardians_2.jpg?1652175766"
+              style="width: 100%"
             />
             <h2>Guardians of the Galaxy Vol.2 <strong>(2017)</strong></h2>
             <p>
@@ -479,6 +506,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/877/original/Avengers_2.jpg?1652175556"
+              style="width: 100%"
             />
             <h2>Avengers: Age of Ultron <strong>(2015)</strong></h2>
             <p>
@@ -495,6 +523,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/876/original/Ant_Man.jpg?1652175539"
+              style="width: 100%"
             />
             <h2>Ant-Man <strong>(2015)</strong></h2>
             <p>
@@ -511,6 +540,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/886/original/Civil_War.jpg?1652175724"
+              style="width: 100%"
             />
             <h2>Captain America: Civil War <strong>(2016)</strong></h2>
             <p>
@@ -525,6 +555,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/882/original/Black_Widow.jpg?1652175658"
+              style="width: 100%"
             />
             <h2>Black Widow <strong>(2021)</strong></h2>
             <p>
@@ -539,6 +570,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/895/original/Spiderman.jpg?1652175836"
+              style="width: 100%"
             />
             <h2>Spider-Man: Homecoming <strong>(2017)</strong></h2>
             <p>
@@ -555,6 +587,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/881/original/Black_Panther.jpg?1652175649"
+              style="width: 100%"
             />
             <h2>Black Panther <strong>(2018)</strong></h2>
             <p>
@@ -570,6 +603,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/888/original/Doctor_Strange.jpg?1652175755"
+              style="width: 100%"
             />
             <h2>Doctor Strange <strong>(2016)</strong></h2>
             <p>
@@ -585,6 +619,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/897/original/Thor_3.jpg?1652175870"
+              style="width: 100%"
             />
             <h2>Thor: Ragnarok <strong>(2017)</strong></h2>
             <p>
@@ -601,6 +636,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/875/original/Ant_Man_2.jpg?1652175515"
+              style="width: 100%"
             />
             <h2>Ant-Man and the Wasp <strong>(2018)</strong></h2>
             <p>
@@ -617,6 +653,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/874/original/Avengers_3.jpg?1652175508"
+              style="width: 100%"
             />
             <h2>Avengers: Infinity War <strong>(2018)</strong></h2>
             <p>
@@ -632,6 +669,7 @@
           <div class="content">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/873/original/Avengers_4.jpg?1652175489"
+              style="width: 100%"
             />
             <h2>Avengers: Endgame <strong>(2019)</strong></h2>
             <p>
